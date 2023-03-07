@@ -19,7 +19,7 @@ class StudentDBTest {
 
         allStudents.addToArray(new Student(2L, "Hasan"));
         allStudents.addToArray(new Student(3L, "Robin"));
-        allStudents.addToArray(new Student(4L, "June"));
+        allStudents.addToArray(new Student(4L, "Lukas"));
         assertTrue(Arrays.asList(allStudents.getAllStudentsFromArray())
                 .contains(allStudents.randomStudentFromArray()));
     }

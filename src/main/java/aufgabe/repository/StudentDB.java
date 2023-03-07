@@ -35,7 +35,25 @@ public class StudentDB {
 
          return studentList.get((int) (Math.random() * studentList.size()));
      }
+
+
  */
+
+    public Student findById(Long id) {
+        try {
+            for (Student s : arr) {
+                if (s != null && s.getId().equals(id)) {
+                    return s;
+                }
+            }
+            throw new Exception();
+        } catch (Exception e) {
+            System.out.println("student is not found");
+        }
+        return null;
+    }
+
+
     public Student randomStudentFromArray() {
         return arr[(int) (Math.random() * arr.length)];
     }
