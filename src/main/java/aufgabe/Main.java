@@ -37,7 +37,7 @@ public class Main {
         System.out.println(allStudents);
 
         allStudents.removeFromArray(xin);
-       // allStudents.removeFromArray(nix);
+        // allStudents.removeFromArray(nix);
         System.out.println(allStudents);
         System.out.println(allStudents.randomStudentFromArray());
         System.out.println(allStudents.findById(6L));
