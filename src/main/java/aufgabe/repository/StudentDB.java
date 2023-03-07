@@ -7,37 +7,35 @@ import java.util.List;
 
 public class StudentDB {
 
-    //  private List<Student> studentList;
+    private List<Student> studentList;
 
     private Student[] arr;
 
-  /*  public StudentDB(List<Student> studentList) {
+    public StudentDB(List<Student> studentList) {
         this.studentList = studentList;
-    }*/
+    }
 
     public StudentDB(Student[] arr) {
         this.arr = arr;
     }
 
-   /* public List<Student> getAllStudents() {
+    public List<Student> getAllStudents() {
         return studentList;
-    }*/
+    }
 
     public Student[] getAllStudentsFromArray() {
         return arr;
     }
 
-    /*public void setStudentList(List<Student> studentList) {
+    public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
-    }*/
+    }
 
-    /* public Student randomStudent() {
+    public Student randomStudent() {
 
-         return studentList.get((int) (Math.random() * studentList.size()));
-     }
+        return studentList.get((int) (Math.random() * studentList.size()));
+    }
 
-
- */
 
     public Student findById(Long id) {
         try {
@@ -58,7 +56,7 @@ public class StudentDB {
         return arr[(int) (Math.random() * arr.length)];
     }
 
-   /* public void add(Student student) {
+    public void add(Student student) {
         if (!studentList.contains(student)) {
             studentList.add(student);
         } else {
@@ -73,7 +71,7 @@ public class StudentDB {
             throw new RuntimeException("This student does not exist");
         }
 
-    }*/
+    }
 
     public void addToArray(Student student) {
 
@@ -95,17 +93,17 @@ public class StudentDB {
     }
 
 
-   /* @Override
+    @Override
     public String toString() {
         return "StudentDB{" +
                 "studentList=" + studentList +
                 '}';
-    }*/
-
-    @Override
-    public String toString() {
-        return "StudentDB{" +
-                Arrays.toString(arr) +
-                '}';
     }
+
+//    @Override
+//    public String toString() {
+//        return "StudentDB{" +
+//                Arrays.toString(arr) +
+//                '}';
+//    }
 }
