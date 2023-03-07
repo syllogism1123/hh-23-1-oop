@@ -33,13 +33,13 @@ public class Main {
         allStudents.addToArray(new Student(4L, "Lukas"));
 
 
-//        System.out.println(allStudents.randomStudentFromArray());
-//        System.out.println(allStudents);
-//
-//        allStudents.removeFromArray(xin);
-//       // allStudents.removeFromArray(nix);
-//        System.out.println(allStudents);
-//        System.out.println(allStudents.randomStudentFromArray());
+        System.out.println(allStudents.randomStudentFromArray());
+        System.out.println(allStudents);
+
+        allStudents.removeFromArray(xin);
+       // allStudents.removeFromArray(nix);
+        System.out.println(allStudents);
+        System.out.println(allStudents.randomStudentFromArray());
         System.out.println(allStudents.findById(6L));
 
 
