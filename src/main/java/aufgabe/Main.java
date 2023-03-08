@@ -10,12 +10,12 @@ public class Main {
     public static void main(String[] args) {
 
         StudentDB allStudents = new StudentDB(new ArrayList<>());
-        Student xin = new Student(1L, "Xin");
-        Student nix = new Student(99L, "Nix");
+        Student xin = new Student(1L, "Xin", "ComputerScience");
+        Student nix = new Student(99L, "Nix", "Nix");
         allStudents.add(xin);
-        allStudents.add(new Student(2L, "Hasan"));
-        allStudents.add(new Student(3L, "Robin"));
-        allStudents.add(new Student(4L, "Lukas"));
+        allStudents.add(new Student(2L, "Hasan", "ComputerScience"));
+        allStudents.add(new Student(3L, "Robin", "Biology"));
+        allStudents.add(new Student(4L, "Lukas", "Biology"));
         System.out.println(allStudents.randomStudent());
         System.out.println(allStudents.getAllStudents());
         allStudents.remove(xin);

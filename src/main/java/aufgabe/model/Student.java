@@ -6,10 +6,23 @@ public class Student {
     private Long id;
     private String name;
 
+    private String faculty;
 
-    public Student(Long id, String name) {
+    public Student() {
+    }
+
+    public Student(Long id, String name, String faculty) {
         this.id = id;
         this.name = name;
+        this.faculty = faculty;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
 
     public Long getId() {
@@ -33,6 +46,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", faculty='" + faculty + '\'' +
                 '}';
     }
 

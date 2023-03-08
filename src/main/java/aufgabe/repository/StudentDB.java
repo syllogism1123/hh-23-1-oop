@@ -3,7 +3,9 @@ package aufgabe.repository;
 import aufgabe.model.Student;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class StudentDB {
 
@@ -11,12 +13,18 @@ public class StudentDB {
 
     private Student[] arr;
 
+    private Map<String, Student> studentMap;
+
     public StudentDB(List<Student> studentList) {
         this.studentList = studentList;
     }
 
     public StudentDB(Student[] arr) {
         this.arr = arr;
+    }
+
+    public StudentDB() {
+        this.studentMap = new HashMap<>();
     }
 
     public List<Student> getAllStudents() {
