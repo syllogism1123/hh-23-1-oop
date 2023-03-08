@@ -1,5 +1,7 @@
 package aufgabe;
 
+import aufgabe.model.BiologyStudent;
+import aufgabe.model.ComputerScienceStudent;
 import aufgabe.model.Student;
 import aufgabe.repository.StudentDB;
 
@@ -10,12 +12,12 @@ public class Main {
     public static void main(String[] args) {
 
         StudentDB allStudents = new StudentDB(new ArrayList<>());
-        Student xin = new Student(1L, "Xin", "ComputerScience");
-        Student nix = new Student(99L, "Nix", "Nix");
+        Student xin = new ComputerScienceStudent(1L, "Xin", "ComputerScience");
+
         allStudents.add(xin);
-        allStudents.add(new Student(2L, "Hasan", "ComputerScience"));
-        allStudents.add(new Student(3L, "Robin", "Biology"));
-        allStudents.add(new Student(4L, "Lukas", "Biology"));
+        allStudents.add(new ComputerScienceStudent(2L, "Hasan", "ComputerScience"));
+        allStudents.add(new BiologyStudent(3L, "Robin", "Biology"));
+        allStudents.add(new BiologyStudent(4L, "Lukas", "Biology"));
         System.out.println(allStudents.randomStudent());
         System.out.println(allStudents.getAllStudents());
         allStudents.remove(xin);

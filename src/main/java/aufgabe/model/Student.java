@@ -2,7 +2,7 @@ package aufgabe.model;
 
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
     private Long id;
     private String name;
 
@@ -16,6 +16,8 @@ public class Student {
         this.name = name;
         this.faculty = faculty;
     }
+
+    public abstract boolean hasSkill();
 
     public String getFaculty() {
         return faculty;
